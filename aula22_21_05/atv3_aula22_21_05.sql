@@ -73,6 +73,7 @@ INNER JOIN tb_produto ON tb_categoria.id_categoria = tb_produto.fk_categoria
 WHERE descricao LIKE 'Controlado';
 
 -- select e conte quantos remédios há em cada categoria
+-- exercicio adicional para testar o funcionamento do group by e count
 SELECT descricao AS Categoria, COUNT(*) AS Quantidade
 FROM tb_categoria
 INNER JOIN tb_produto ON tb_categoria.id_categoria = tb_produto.fk_categoria
